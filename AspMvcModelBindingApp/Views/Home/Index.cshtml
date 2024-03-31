@@ -1,0 +1,20 @@
+﻿@model IEnumerable<Meetup>
+
+<h1>All meetups:</h1>
+
+<table>
+    <thead>
+        <td>Id</td>
+        <td>Title</td>
+        <td>Date Time</td>
+    </thead>
+    @foreach(var m in Model)
+    {
+        <tr>
+            <td>@m.Id</td>
+            <td>@m.Title</td>
+            <td>@m.Date</td>
+        </tr>
+    }
+</table>
+
